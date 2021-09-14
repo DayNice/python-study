@@ -1,2 +1,6 @@
-/baekjoon/assets/
+/src/baekjoon/assets/
 __pycache__
+/.idea/
+/.venv/
+poetry.lock
+pyproject.toml
