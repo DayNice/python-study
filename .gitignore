@@ -1,6 +1,14 @@
-/src/baekjoon/assets/
-__pycache__
-/.idea/
-/.venv/
+# poetry
 poetry.lock
 pyproject.toml
+/.venv/
+
+# jetbrains
+/.idea/
+
+# python cache
+__pycache__
+
+# assets
+/src/baekjoon/assets/
+/assets/
