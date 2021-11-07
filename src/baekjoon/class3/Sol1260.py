@@ -35,13 +35,15 @@ def bfs(n, v, adj_lists):
     visited = [False] * (n + 1)
     queue = deque()
     queue.append(v)
+    visited[v] = True
+    nums.append(v)
     while queue:
         v = queue.popleft()
-        if visited[v]:
-            continue
-        nums.append(v)
-        visited[v] = True
-        queue.extend(adj_lists[v])
+        for p in adj_lists[v]:
+            if not visited[p]:
+                visited[p] = True
+                nums.append(p)
+                queue.append(p)
     return nums
 
 
